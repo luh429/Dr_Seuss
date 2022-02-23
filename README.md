@@ -1,2 +1,2 @@
 # Dr_Seuss
-Digit210 Dr. Seuss project repo
+https://github.com/luh429/Dr_Seuss
