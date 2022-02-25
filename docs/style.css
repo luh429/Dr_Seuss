@@ -1,59 +1,108 @@
-head {}
+body {
 
-body{
-background-color: white;
-margin: 0px;
+    margin: 0px;
+    background-image: url(images/DrSeuss.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+div {
+    width: 100%;
+    padding: 5px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.52);
+    margin: auto;
+    text-align: center;
+}
+div.Img{
+    width: 100%;
+    padding: 5px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+br.bigB {
+    padding-top: 500px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul.menu {
+    display: inline-block;
+    list-style-type: none;
+}
+li.menu_list {
+    height: 125px;
+    width: 125px;
+    position: relative;
+}
+li.menu_list .front,
+a.side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+li.menu_list .front {
+    background-color: rgba(0, 0, 255, 0.65);
+    color: #FFFFFF;
+    transform-origin: 0 0;
+}
+a.side {
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 255, 0.65);
+    transform-origin: 0 0 85px;
+    transform: rotateY(-90deg);
+}
+li.menu_list:hover a.side {
+    transform: rotateY(0deg);
+}
+li.menu_list:hover .front {
+    transform: rotateY(90deg);
 }
 
+p {
+    color: white;
+    padding-left:15%;
+    padding-right:15%;
+    text-align: center;
+}
+h1 {
+    text-shadow: 2px 2px 5px cyan;
+    font-size: 80px;
+    color: white;
+    font-family: arial, helvetica, san-serif;
+    text-align: center;
 
 
 
-
-ul.navbar {
-background-color: #4C4C4C;
-padding-top: 10px;
-padding-bottom: 28px;
-padding-left: 0px;
-padding-right: 0px;
-margin: 0px;
 }
-li.page {
-display: inline;
-float: left;
-}
-li.selected {
-display: inline;
-float: left;
-}
-a.page {
-text-align: center;
-text-decoration: none;
-color: white;
-padding: 10px;
-background-color: #4C4C4C;
-}
-a.selected {
-text-align: center;
-text-decoration: none;
-color: black;
-padding: 10px;
-background-color: #ebebeb;
-}
-a.page:hover {
-background-color: #6A6B6A;
-}
-a.selected:hover {
-background-color: #6A6B6A;
-color: white;
-}
+h2 {
+    text-shadow: 2px 2px 5px cyan;
+    font-size: 40px;
+    color: white;
+    font-family: arial, helvetica, san-serif;
+    margin: auto;
+    text-align: center;
 
 
-
-
-
-img{
-width: 100%;
 }
-h1{
-color: red;
+
+h3 {
+    color: white;
+    text-align: center;
 }
+/*///////////////////////////////////////
+*/
