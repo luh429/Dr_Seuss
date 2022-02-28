@@ -1,7 +1,7 @@
 body {
 
     margin: 0px;
-    background-image: url(images/DrSeuss.png);
+    background-image: url(images/DrSeuss2.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -103,6 +103,12 @@ h2 {
 h3 {
     color: white;
     text-align: center;
+}
+
+img.banner{
+    width:45%;
+    height:45%;
+    padding-bottom: 10px;
 }
 /*///////////////////////////////////////
 */
