@@ -14,13 +14,16 @@ div {
     background: rgba(0, 0, 0, 0.52);
     margin: auto;
     text-align: center;
+    
 }
 div.Img{
-    width: 100%;
-    padding: 5px;
+    width: auto;
     height: auto;
-    margin: auto;
+    display:block;
     text-align: center;
+    background: rgba(0, 0, 0, 0.0);
+    box-sizing:content-box;
+    position: absolute;
 }
 br.bigB {
     padding-top: 500px;
@@ -33,6 +36,7 @@ br.bigB {
 ul.menu {
     display: inline-block;
     list-style-type: none;
+    position: relative;
 }
 li.menu_list {
     height: 125px;
