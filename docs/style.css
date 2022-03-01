@@ -23,11 +23,24 @@ div.Img{
     text-align: center;
     background: rgba(0, 0, 0, 0.0);
     box-sizing:content-box;
-    position: absolute;
+    position:absolute;
 }
-br.bigB {
-    padding-top: 500px;
+div.text{
+    width:80%;
+    height: 200px;
+    display:block;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+    position:relative;
 }
+div.bigB {
+    padding-top: 50px;
+    padding-bottom:200px;
+    background: rgba(0, 0, 0, 0.0);
+    position:static;
+    color:rgba(0, 0, 0, 0);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +49,7 @@ br.bigB {
 ul.menu {
     display: inline-block;
     list-style-type: none;
-    position: relative;
+    position: absolute;
 }
 li.menu_list {
     height: 125px;
@@ -114,5 +127,4 @@ img.banner{
     height:45%;
     padding-bottom: 10px;
 }
-/*///////////////////////////////////////
-*/
+/*///////////////////////////////////////*/
