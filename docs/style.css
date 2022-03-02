@@ -26,8 +26,8 @@ div.Img{
     position:absolute;
 }
 div.text{
-    width:80%;
-    height: 200px;
+    width:75%;
+    height: auto;
     display:block;
     text-align: center;
     background: rgba(0, 0, 0, 0.35);
