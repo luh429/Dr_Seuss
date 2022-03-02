@@ -1,17 +1,17 @@
 body {
-
     margin: 0px;
     background-image: url(images/DrSeuss2.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: 125px;
     overflow-x: hidden;
 }
 div {
     width: 100%;
     padding: 5px;
     height: auto;
-    background: rgba(0, 0, 0, 0.52);
+/*    background: rgba(0, 0, 0, 0.52)*/;
     margin: auto;
     text-align: center;
     
@@ -21,22 +21,16 @@ div.Img{
     height: auto;
     display:block;
     text-align: center;
-    background: rgba(0, 0, 0, 0.0);
+    /*background: rgba(0, 0, 0, 0.0);*/
     box-sizing:content-box;
     position:absolute;
+    margin-left: 125px;
 }
-div.text{
-    width:80%;
-    height: 200px;
-    display:block;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.35);
-    position:relative;
-}
+
 div.bigB {
     padding-top: 50px;
     padding-bottom:200px;
-    background: rgba(0, 0, 0, 0.0);
+    /*background: rgba(0, 0, 0, 0.0);*/
     position:static;
     color:rgba(0, 0, 0, 0);
 }
@@ -50,6 +44,11 @@ ul.menu {
     display: inline-block;
     list-style-type: none;
     position: absolute;
+    position: fixed;
+    padding-bottom: 200px;
+    border-right-style: solid;
+    border-width: 3px;
+    background-color: blue;
 }
 li.menu_list {
     height: 125px;
@@ -73,7 +72,7 @@ a.side {
     cursor: pointer;
 }
 li.menu_list .front {
-    background-color: rgba(0, 0, 255, 0.65);
+    background-color: blue;
     color: #FFFFFF;
     transform-origin: 0 0;
 }
@@ -90,29 +89,45 @@ li.menu_list:hover .front {
     transform: rotateY(90deg);
 }
 
-p {
-    color: white;
-    padding-left:15%;
-    padding-right:15%;
+div.text{
+    width:80%;
+    display:block;
     text-align: center;
+    background: rgba(255, 255, 255, 0.55);
+    /*background-color: white;*/
+    position:relative;
+    border-style: solid;
+    border-width: 3px;
+    margin-left: 187.5px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+p {
+    color: black;
+    padding-left:50px;
+    padding-right:50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position:static;
+    font-size: 20px;
 }
 h1 {
-    text-shadow: 2px 2px 5px cyan;
     font-size: 80px;
-    color: white;
+    color: Black;
     font-family: arial, helvetica, san-serif;
     text-align: center;
-
-
-
+    padding-top: 10px;
 }
+
 h2 {
-    text-shadow: 2px 2px 5px cyan;
     font-size: 40px;
-    color: white;
+    color: black;
     font-family: arial, helvetica, san-serif;
     margin: auto;
     text-align: center;
+    padding-top: 50px
 
 
 }
