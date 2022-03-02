@@ -26,9 +26,7 @@ div.Img{
     position:absolute;
     margin-left: 125px;
 }
-<<<<<<< HEAD
 
-=======
 div.text{
     width:75%;
     height: auto;
@@ -37,7 +35,7 @@ div.text{
     background: rgba(0, 0, 0, 0.35);
     position:relative;
 }
->>>>>>> 311e21a65e1276edf922b37da769c3a86f09c567
+
 div.bigB {
     padding-top: 50px;
     padding-bottom:200px;
