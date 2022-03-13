@@ -1,0 +1,15 @@
+start = book
+book = element book {metadata, title, body}
+    metadata = element metedata {genre, type, date}
+        genre =  attribute genre {"rhyme"}
+        type = attribute type {"literacy"}
+        date = attribute date {"1972"}
+
+    title = element title {text}
+
+    body = element body {stanza*}
+        stanza = element stanza {l}
+        l = element l {text}
+
+
+
