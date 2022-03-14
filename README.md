@@ -3,4 +3,4 @@
 
 **Notes**: https://github.com/luh429/Dr_Seuss/tree/main/meetingNotes
 
-**Project Milestone 2**: https://psu.instructure.com/courses/2158996/assignments/13854438
+**Project Milestone 3**: https://psu.instructure.com/courses/2158996/assignments/13863578
