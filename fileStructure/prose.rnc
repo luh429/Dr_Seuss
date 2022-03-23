@@ -1,10 +1,10 @@
 start = book
 book = element book {metadata, title, body}
     metadata = element metadata {genre, type, date}
-        genre = attribute genre {text}
-        type = attribute type {text}
+        genre =  attribute genre {"rhyme"|"prose"}
+        type = attribute type {"literacy"}
         date = attribute date {xsd:integer}
     title = element title {text}
-    body = element body {stanza+}
+    body = element body {stanza*}
         stanza = element stanza {l+}
-            l = element l {text}
+        l = element l {text}
