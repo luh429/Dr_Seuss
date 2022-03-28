@@ -5,7 +5,7 @@
 1. Add elements to Schema 
 1. Associate Schemas 
 1. All Push XML to Private GitHub repo 
-    - separte branches
+    - separate branches
 1. Complete Pull Requests 
 1. Git Pull Private Repo to store locally 
 1. Replace database files with new XML 
