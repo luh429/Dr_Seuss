@@ -11,37 +11,38 @@ div {
     width: 100%;
     padding: 5px;
     height: auto;
-/*    background: rgba(0, 0, 0, 0.52)*/;
+    /*    background: rgba(0, 0, 0, 0.52)*/
+    ;
     margin: auto;
     text-align: center;
-    
+
 }
-div.Img{
+div.Img {
     width: auto;
     height: auto;
-    display:block;
+    display: block;
     text-align: center;
     /*background: rgba(0, 0, 0, 0.0);*/
-    box-sizing:content-box;
-    position:absolute;
+    box-sizing: content-box;
+    position: absolute;
     margin-left: 125px;
 }
 
-div.text{
-    width:75%;
+div.text {
+    width: 75%;
     height: auto;
-    display:block;
+    display: block;
     text-align: center;
     background: rgba(0, 0, 0, 0.35);
-    position:relative;
+    position: relative;
 }
 
 div.bigB {
     padding-top: 50px;
-    padding-bottom:200px;
+    padding-bottom: 200px;
     /*background: rgba(0, 0, 0, 0.0);*/
-    position:static;
-    color:rgba(0, 0, 0, 0);
+    position: static;
+    color: rgba(0, 0, 0, 0);
 }
 
 * {
@@ -98,13 +99,13 @@ li.menu_list:hover .front {
     transform: rotateY(90deg);
 }
 
-div.text{
-    width:80%;
-    display:block;
+div.text {
+    width: 80%;
+    display: block;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     /*background-color: white;*/
-    position:relative;
+    position: relative;
     border-style: solid;
     border-width: 3px;
     margin-left: 187.5px;
@@ -114,12 +115,12 @@ div.text{
 
 p {
     color: black;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    position:static;
+    position: static;
     font-size: 20px;
 }
 h1 {
@@ -147,9 +148,13 @@ h3 {
     font-size: 30px;
 }
 
-img.banner{
-    width:45%;
-    height:45%;
+img.IDcard {
+    width: 100%;
+    height: auto;
+}
+img.banner {
+    width: 45%;
+    height: 45%;
     padding-bottom: 10px;
 }
 
@@ -180,7 +185,33 @@ div.box2 {
     margin-bottom: 120px;
     float: right;
 }
-
+div.IDcard1 {
+    width: 35%;
+    height: 462px;
+    display: inline-block;
+    text-align:center ;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    border-style: solid;
+    border-width: 3px;
+    margin-left: 187.5px;
+    border-radius: 50px;
+    margin-bottom: 120px;
+}
+div.IDcard2 {
+    width: 35%;
+    height: 462px;
+    display: inline-block;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    left:200px;
+    border-style: solid;
+    border-width: 3px;
+    margin-right: 5%;
+    border-radius: 50px;
+    margin-bottom: 120px;
+}
 img.box {
     padding-top: 9%;
     width: 60%;
