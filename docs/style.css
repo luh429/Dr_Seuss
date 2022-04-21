@@ -1,72 +1,68 @@
 body {
     margin: 0px;
     background-image: url(images/DrSeuss2.png);
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 125px;
+    background-position: 10%;
     overflow-x: hidden;
 }
-div {
-    width: 100%;
-    padding: 5px;
-    height: auto;
-    /*    background: rgba(0, 0, 0, 0.52)*/
-    ;
-    margin: auto;
-    text-align: center;
 
-}
 div.Img {
     width: auto;
     height: auto;
     display: block;
     text-align: center;
-    /*background: rgba(0, 0, 0, 0.0);*/
     box-sizing: content-box;
     position: absolute;
-    margin-left: 125px;
+    margin-left: 10%;
 }
 
 div.text {
-    width: 75%;
-    height: auto;
-    display: block;
+    width: 80%;
     text-align: center;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(255, 255, 255, 0.8);
     position: relative;
+    border-style: solid;
+    border-width: 3px;
+    margin-left: 15%;
+    margin-right: 5%;
+    border-radius: 50px;
+    margin-bottom: 50px;
 }
 
 div.bigB {
     padding-top: 50px;
     padding-bottom: 200px;
-    /*background: rgba(0, 0, 0, 0.0);*/
     position: static;
     color: rgba(0, 0, 0, 0);
 }
 
-* {
+
+ul.menu {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-ul.menu {
+    width: 10%;
+    height: 100%; 
     display: inline-block;
     list-style-type: none;
     position: absolute;
     position: fixed;
-    padding-bottom: 200px;
+    padding-bottom: 100%;
     border-right-style: solid;
     border-width: 3px;
     background-color: blue;
 }
 li.menu_list {
+    margin: 0;
+    padding: 0;
     height: 125px;
-    width: 125px;
+    width: 100%;
     position: relative;
 }
 li.menu_list .front,
 a.side {
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,11 +78,15 @@ a.side {
     cursor: pointer;
 }
 li.menu_list .front {
+    margin: 0;
+    padding: 0;
     background-color: blue;
     color: #FFFFFF;
     transform-origin: 0 0;
 }
 a.side {
+    margin: 0;
+    padding: 0;
     background-color: #FFFFFF;
     color: rgba(0, 0, 255, 0.65);
     transform-origin: 0 0 85px;
@@ -97,20 +97,6 @@ li.menu_list:hover a.side {
 }
 li.menu_list:hover .front {
     transform: rotateY(90deg);
-}
-
-div.text {
-    width: 80%;
-    display: block;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    /*background-color: white;*/
-    position: relative;
-    border-style: solid;
-    border-width: 3px;
-    margin-left: 187.5px;
-    border-radius: 50px;
-    margin-bottom: 50px;
 }
 
 p {
@@ -138,8 +124,6 @@ h2 {
     margin: auto;
     text-align: center;
     padding-top: 50px
-
-
 }
 
 h3 {
@@ -149,71 +133,17 @@ h3 {
 }
 
 img.IDcard {
-    width: 100%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color:black;
+    border-width: 3px;
+    margin: 2%;
+    width: 40%;
     height: auto;
 }
 img.banner {
     width: 45%;
     height: 45%;
     padding-bottom: 10px;
-}
-
-div.box {
-    width: 35%;
-    height: 400px;
-    display: inline-block;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    position: relative;
-    border-style: solid;
-    border-width: 3px;
-    margin-left: 187.5px;
-    border-radius: 50px;
-    margin-bottom: 120px;
-}
-div.box2 {
-    width: 35%;
-    height: 400px;
-    display: inline-block;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    position: relative;
-    border-style: solid;
-    border-width: 3px;
-    margin-right: 5%;
-    border-radius: 50px;
-    margin-bottom: 120px;
-    float: right;
-}
-div.IDcard1 {
-    width: 35%;
-    height: 462px;
-    display: inline-block;
-    text-align:center ;
-    background: rgba(255, 255, 255, 0.8);
-    position: relative;
-    border-style: solid;
-    border-width: 3px;
-    margin-left: 187.5px;
-    border-radius: 50px;
-    margin-bottom: 120px;
-}
-div.IDcard2 {
-    width: 35%;
-    height: 462px;
-    display: inline-block;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    position: relative;
-    left:200px;
-    border-style: solid;
-    border-width: 3px;
-    margin-right: 5%;
-    border-radius: 50px;
-    margin-bottom: 120px;
-}
-img.box {
-    padding-top: 9%;
-    width: 60%;
 }
 /*///////////////////////////////////////*/
