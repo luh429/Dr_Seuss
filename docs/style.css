@@ -58,6 +58,7 @@ li.menu_list {
     height: 125px;
     width: 100%;
     position: relative;
+    font-family: 'grinched_2.0regular';
 }
 li.menu_list .front,
 a.side {
@@ -101,16 +102,14 @@ li.menu_list:hover .front {
 
 p {
     color: black;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 50px;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
     position: static;
     font-size: 20px;
+    font-family: 'grinched_2.0regular';
 }
 h1 {
-    font-size: 80px;
+    font-size: 100px;
     color: Black;
     font-family: arial, helvetica, san-serif;
     text-align: center;
@@ -118,12 +117,12 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 60px;
     color: black;
-    font-family: arial, helvetica, san-serif;
     margin: auto;
     text-align: center;
-    padding-top: 50px
+    padding-top: 50px;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;;
 }
 
 h3 {
@@ -145,5 +144,79 @@ img.banner {
     width: 45%;
     height: 45%;
     padding-bottom: 10px;
+}
+
+@font-face {
+    font-family: 'grinched_2.0regular';
+    src: url('grinched_2.0-webfont.woff2') format('woff2'),
+         url('grinched_2.0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Dropdown Button */
+button.dropbtn {
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 10px 75%;
+  font-size: 30px;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 50px;
+  font-family: 'grinched_2.0regular';
+}
+
+/* The container <div> - needed to position the dropdown content */
+div.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 15%;
+  font-family: 'grinched_2.0regular';
+  width: 15%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+div.dropdown-content {
+  display: none;
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50px;
+  margin-top: 1px;
+  padding: 50px;
+  width: 485%;
+}
+
+/* Links inside the dropdown */
+div.dropdown-content a {
+  color: black;
+  padding: 3px 0px;
+  text-decoration: none;
+  display: inline-block;
+  width: 33%;
+  transition: all .2s ease-in-out;
+}
+
+/* Change color of dropdown links on hover */
+div.dropdown-content a:hover {
+  color: blue;
+  transform: translate(10px);
+
+}
+
+/* Show the dropdown menu on hover */
+div.dropdown:hover div.dropdown-content {
+  display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+div.dropdown:hover button.dropbtn {
+  background-color: blue;
+  color: white;
 }
 /*///////////////////////////////////////*/
