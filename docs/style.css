@@ -106,14 +106,14 @@ p {
     text-align: center;
     position: static;
     font-size: 20px;
-    font-family: 'grinched_2.0regular';
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
 }
 h1 {
     font-size: 100px;
     color: Black;
-    font-family: arial, helvetica, san-serif;
     text-align: center;
     padding-top: 10px;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
 }
 
 h2 {
@@ -122,13 +122,14 @@ h2 {
     margin: auto;
     text-align: center;
     padding-top: 50px;
-    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
 }
 
 h3 {
     color: black;
     text-align: center;
     font-size: 30px;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
 }
 
 img.IDcard {
@@ -155,68 +156,99 @@ img.banner {
 }
 
 
-
-/* Dropdown Button */
-button.dropbtn {
-  background: rgba(255, 255, 255, 0.8);
-  color: black;
-  padding: 10px 75%;
-  font-size: 30px;
-  border-width: 3px;
-  border-color: black;
-  border-radius: 50px;
-  font-family: 'grinched_2.0regular';
-}
-
-/* The container <div> - needed to position the dropdown content */
 div.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-left: 15%;
-  font-family: 'grinched_2.0regular';
-  width: 15%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+div#button {
+    background:rgba(255, 255, 255, 0.8);
+    color: black;
+    margin-left: 15%;
+    font-size: 35px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    border-width: 3px;
+    width: 15%;
+    text-align: center;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
+    padding: 5px;
+}
+div#menu {
+    background:rgba(255, 255, 255, 0.8);
+    color: black;
+    margin-left: 15%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0px 50px 50px 50px;
+    border-width: 3px;
+    width: 15%;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
+    padding: 0;
+    height: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+div#menu a {
+    display: inline-block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    text-decoration: none;
+    color: black;
+    margin: 0px 0px;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+}
+div.dropdown:hover div#button {
+    background-color: blue;
+    color: white;
+    border-radius: 50px 50px 0px 0px;
+    border-style: solid solid none solid;
 }
 
-/* Dropdown Content (Hidden by Default) */
-div.dropdown-content {
-  display: none;
-  position: relative;
-  background: rgba(255, 255, 255, 0.8);
-  border-width: 3px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 50px;
-  margin-top: 1px;
-  padding: 50px;
-  width: 485%;
+div.dropdown:hover div#menu {
+    visibility: visible;
+    padding: 5%;
+    height: 250px;
+    width: 70%;
+}
+div.dropdown:hover div#menu a {
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+    margin: 3px 0px;
+    height: auto;
+    width: 30%;
+}
+div#menu a:hover {
+    color: blue;
+    transform: translate(10px);
 }
 
-/* Links inside the dropdown */
-div.dropdown-content a {
-  color: black;
-  padding: 3px 0px;
-  text-decoration: none;
-  display: inline-block;
-  width: 33%;
-  transition: all .2s ease-in-out;
+
+
+
+
+svg.graph {
+/*    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 50px;*/
+    width: 90%;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.1);
+    font-family:'grinched_2.0regular',arial, helvetica, san-serif;
 }
 
-/* Change color of dropdown links on hover */
-div.dropdown-content a:hover {
-  color: blue;
-  transform: translate(10px);
-
+a.return {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    font-family:'grinched_2.0regular',arial, helvetica, san-serif;
+    transition: all .2s ease-in-out;
 }
-
-/* Show the dropdown menu on hover */
-div.dropdown:hover div.dropdown-content {
-  display: block;
+a.return:hover {
+    color: blue;
+    transform: translate(10px);
 }
-/* Change the background color of the dropdown button when the dropdown content is shown */
-div.dropdown:hover button.dropbtn {
-  background-color: blue;
-  color: white;
-}
-/*///////////////////////////////////////*/
