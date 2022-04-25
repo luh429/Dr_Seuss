@@ -5,22 +5,12 @@ body {
     background-size: cover;
     background-position: 10%;
     overflow-x: hidden;
+    cursor:url(images/favicon.ico),default;
 }
-<<<<<<< HEAD
-div {
-    width: 100%;
-    padding: 5px;
-    height: auto;
-    background: rgba(0, 0, 0, 0.52);
-    margin: auto; 
-    text-align: center;
-    
+a:hover {
+    cursor:url(images/favicon.ico),default;
 }
-div.Img{
-=======
-
 div.Img {
->>>>>>> b42c57b96b7c816184b444de159e27ae4b59b082
     width: auto;
     height: auto;
     display: block;
