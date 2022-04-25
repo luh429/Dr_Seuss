@@ -1,12 +1,12 @@
 body {
-
     margin: 0px;
     background-image: url(images/DrSeuss2.png);
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: 10%;
     overflow-x: hidden;
 }
+<<<<<<< HEAD
 div {
     width: 100%;
     padding: 5px;
@@ -17,47 +17,66 @@ div {
     
 }
 div.Img{
+=======
+
+div.Img {
+>>>>>>> b42c57b96b7c816184b444de159e27ae4b59b082
     width: auto;
     height: auto;
-    display:block;
+    display: block;
     text-align: center;
-    background: rgba(0, 0, 0, 0.0);
-    box-sizing:content-box;
-    position:absolute;
-}
-div.text{
-    width:75%;
-    height: auto;
-    display:block;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.35);
-    position:relative;
-}
-div.bigB {
-    padding-top: 50px;
-    padding-bottom:200px;
-    background: rgba(0, 0, 0, 0.0);
-    position:static;
-    color:rgba(0, 0, 0, 0);
+    box-sizing: content-box;
+    position: absolute;
+    margin-left: 10%;
 }
 
-* {
+div.text {
+    width: 80%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    border-style: solid;
+    border-width: 3px;
+    margin-left: 15%;
+    margin-right: 5%;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+div.bigB {
+    padding-top: 50px;
+    padding-bottom: 200px;
+    position: static;
+    color: rgba(0, 0, 0, 0);
+}
+
+
+ul.menu {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-ul.menu {
+    width: 10%;
+    height: 100%; 
     display: inline-block;
     list-style-type: none;
     position: absolute;
+    position: fixed;
+    padding-bottom: 100%;
+    border-right-style: solid;
+    border-width: 3px;
+    background-color: blue;
 }
 li.menu_list {
+    margin: 0;
+    padding: 0;
     height: 125px;
-    width: 125px;
+    width: 100%;
     position: relative;
+    font-family: 'grinched_2.0regular';
 }
 li.menu_list .front,
 a.side {
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,11 +92,15 @@ a.side {
     cursor: pointer;
 }
 li.menu_list .front {
-    background-color: rgba(0, 0, 255, 0.65);
+    margin: 0;
+    padding: 0;
+    background-color: blue;
     color: #FFFFFF;
     transform-origin: 0 0;
 }
 a.side {
+    margin: 0;
+    padding: 0;
     background-color: #FFFFFF;
     color: rgba(0, 0, 255, 0.65);
     transform-origin: 0 0 85px;
@@ -91,40 +114,154 @@ li.menu_list:hover .front {
 }
 
 p {
-    color: white;
-    padding-left:15%;
-    padding-right:15%;
+    color: black;
+    padding: 50px;
     text-align: center;
+    position: static;
+    font-size: 20px;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
 }
 h1 {
-    text-shadow: 2px 2px 5px cyan;
-    font-size: 80px;
-    color: white;
-    font-family: arial, helvetica, san-serif;
+    font-size: 100px;
+    color: Black;
     text-align: center;
-
-
-
+    padding-top: 10px;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
 }
+
 h2 {
-    text-shadow: 2px 2px 5px cyan;
-    font-size: 40px;
-    color: white;
-    font-family: arial, helvetica, san-serif;
+    font-size: 60px;
+    color: black;
     margin: auto;
     text-align: center;
-
-
+    padding-top: 50px;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
 }
 
 h3 {
-    color: white;
+    color: black;
     text-align: center;
+    font-size: 30px;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
 }
 
-img.banner{
-    width:45%;
-    height:45%;
+img.IDcard {
+    border-radius: 20px;
+    border-style: solid;
+    border-color:black;
+    border-width: 3px;
+    margin: 2%;
+    width: 40%;
+    height: auto;
+}
+img.banner {
+    width: 45%;
+    height: 45%;
     padding-bottom: 10px;
 }
-/*///////////////////////////////////////*/
+
+@font-face {
+    font-family: 'grinched_2.0regular';
+    src: url('grinched_2.0-webfont.woff2') format('woff2'),
+         url('grinched_2.0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+div.dropdown {
+    margin-bottom: 10px;
+    padding: 0;
+}
+div#button {
+    background:rgba(255, 255, 255, 0.8);
+    color: black;
+    margin-left: 15%;
+    font-size: 35px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    border-width: 3px;
+    width: 15%;
+    text-align: center;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
+    padding: 5px;
+}
+div#menu {
+    background:rgba(255, 255, 255, 0.8);
+    color: black;
+    margin-left: 15%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0px 50px 50px 50px;
+    border-width: 3px;
+    width: 15%;
+    font-family: 'grinched_2.0regular',arial, helvetica, san-serif;
+    padding: 0;
+    height: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+div#menu a {
+    display: inline-block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    text-decoration: none;
+    color: black;
+    margin: 0px 0px;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+}
+div.dropdown:hover div#button {
+    background-color: blue;
+    color: white;
+    border-radius: 50px 50px 0px 0px;
+    border-style: solid solid none solid;
+}
+
+div.dropdown:hover div#menu {
+    visibility: visible;
+    padding: 5%;
+    height: 250px;
+    width: 70%;
+}
+div.dropdown:hover div#menu a {
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+    margin: 3px 0px;
+    height: auto;
+    width: 30%;
+}
+div#menu a:hover {
+    color: blue;
+    transform: translate(10px);
+}
+
+
+
+
+
+svg.graph {
+/*    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 50px;*/
+    width: 90%;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.1);
+    font-family:'grinched_2.0regular',arial, helvetica, san-serif;
+}
+
+a.return {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    font-family:'grinched_2.0regular',arial, helvetica, san-serif;
+    transition: all .2s ease-in-out;
+}
+a.return:hover {
+    color: blue;
+    transform: translate(10px);
+}
