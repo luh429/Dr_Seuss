@@ -10,6 +10,9 @@ body {
 a:hover {
     cursor:url(images/favicon.ico),default;
 }
+span:hover {
+    cursor:url(images/favicon.ico),default;
+}
 div.Img {
     width: auto;
     height: auto;
