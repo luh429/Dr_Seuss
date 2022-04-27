@@ -273,3 +273,6 @@ span.vr {
     background: black;
     margin: 0 2px;
 }
+text.bar {
+    font-size: 10px;
+}
