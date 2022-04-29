@@ -8,7 +8,7 @@ body {
     cursor:url(images/favicon.ico),default;
 }
 a:hover {
-    cursor:url(images/favicon.ico),default;
+    cursor:url(images/CatHand.png),default;
 }
 div.Img {
     width: auto;
@@ -235,7 +235,15 @@ div#menu a:hover {
 
 
 
-
+img.code{
+       width: 75%;
+    height: auto;
+    display: block;
+    text-align: center;
+    box-sizing: content-box;
+    padding-left: 10%;
+   
+}
 
 svg.graph {
 /*    border-style: solid;
