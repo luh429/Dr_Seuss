@@ -5,10 +5,10 @@ body {
     background-size: cover;
     background-position: 10%;
     overflow-x: hidden;
-    cursor:url(images/favicon.ico),default;
+    cursor:url(images/CatHand.ico),default;
 }
 a:hover {
-    cursor:url(images/CatHand.png),default;
+    cursor:url(images/CatHand.ico),default;
 }
 div.Img {
     width: auto;
