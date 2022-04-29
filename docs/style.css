@@ -293,3 +293,15 @@ span.vr {
 text.bar {
     font-size: 10px;
 }
+table {
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 1.0);
+    display: inline-block;
+    margin: 20px;
+}
+th {
+        border: 1px solid black;
+}
+td {
+        border: 1px solid black;
+}
