@@ -244,6 +244,15 @@ img.code{
     padding-left: 10%;
    
 }
+iframe.code{
+       width: 75%;
+    height: 500px;
+    display: block;
+    text-align: center;
+    box-sizing: content-box;
+    padding-left: 10%;
+   
+}
 
 svg.graph {
 /*    border-style: solid;
