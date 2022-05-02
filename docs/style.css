@@ -10,6 +10,18 @@ body {
 a:hover {
     cursor:url(images/CatHand.ico),default;
 }
+ul:hover {
+    cursor:url(images/CatHand.ico),default;
+}
+li:hover {
+    cursor:url(images/CatHand.ico),default;
+}
+span:hover {
+    cursor:url(images/CatHand.ico),default;
+}
+a:active {
+    cursor:url(images/CatHand2.ico),default;
+}
 div.Img {
     width: auto;
     height: auto;
