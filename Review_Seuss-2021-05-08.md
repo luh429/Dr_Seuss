@@ -45,7 +45,7 @@ That is because the XQuery that reaches for distinct-values of the characters wa
 let $char := $b//char/@name =>distinct-values()
 ```
 
-With this line, you are missing quite a lot of data you encoded. To conform with your project schema, what you should have is a way to handle the `<char>` elements with `@n` attributes, or that lack `@name`. That's complicated, but I think you would probably need something like this. Always use `normalize-space()` to make sure you eliminate extra spaces before you take distinct values()! 
+With this line, you are missing quite a lot of data you encoded. To conform with your project schema, what you should have is a way to handle the `<char>` elements with `@n` attributes, or that lack `@name`. That's complicated, but I think you would probably need something like this. Always use `normalize-space()` to make sure you eliminate extra spaces before you take `distinct values()`! 
 
 ```
 let $charNames := $b//char/@name ! normalize-space() => distinct-values()
