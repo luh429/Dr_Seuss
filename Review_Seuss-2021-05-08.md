@@ -36,7 +36,7 @@ There is a serious problem with the character count: You encoded `<char>` elemen
 In eXist-dB I believe I find the XQuery script, drSeussXQuery, in seuss-queries, last updated April 22. It seems possible the script was not re-run after the last update to the XML files, but even if it had been, it could not have collected character data from *Too Many Daves* (and likely several other books) when it was coded like this:
 
 ```xml
-char type="son" n="2">Daves</char>
+<char type="son" n="2">Daves</char>
 ```
 
 That is because the XQuery that reaches for distinct-values of the characters was formulated to reach only the char elements with `@name` attributes, and it reached only into the `@name` before taking distinct values. 
