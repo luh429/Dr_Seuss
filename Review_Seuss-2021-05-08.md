@@ -53,7 +53,7 @@ let $otherChars := $b//char[not(@name)] ! normalize-space() => distinct-values()
 let $chars := ($charNames, $otherChars)
 ```
 
-I believe that would combine all the different ways you encoded `<char>` elements. Ideally you would not have this problem because you would have *strictly controlled it* with your project schema. But when the schema is too permissive, you have to code the XQuery to accommodate the variety of ways your team encoded if you are visualize your project data accurately.
+I believe that would combine all the different ways you encoded `<char>` elements. Ideally you would not have this problem because you would have *strictly controlled it* with your project schema. But when the schema is too permissive, you have to code the XQuery to accommodate the variety of ways your team encoded if you are going to visualize your project data accurately.
 
 I wanted to see how many distinct characters you were missing, so I ran this simple XQuery to check:
 
@@ -68,7 +68,7 @@ return $chars
 
 The `$chars` variable basically combines the two different ways of grabbing characters into a single sequence. I then sent it through `distinct-values()` just in case there were any duplicates in the `@name` vs. non-named approaches to the code and removed one value that way. Doing this, I returned 86 distinct characters in the whole collection. When I returned the simple `$charNames` variable that only looks in `@name`, I only retrieved 59 distinct values. That's a problem. 
 
- I am sorry to find that the data collection and visualization in this project to have missed a serious portion of the team's markup. I am also concerned that the only XQuery file saved in the eXist-dB that seems to generate the character count data is pointed at Logan's personal directory, which does not at this time contain *any* Seuss XML project files. The XQuery *should* be reaching into `collection('/db/seuss/tsg-xml/')`, not `collection('/db/luh429/') at the very least to share this data with the project team, which should have been reviewing it for accuracy. 
+ I am sorry to find that the data collection and visualization in this project to have missed a serious portion of the team's markup. I am also concerned that the only XQuery file saved in the eXist-dB that seems to generate the character count data is pointed at Logan's personal directory, which does not at this time contain *any* Seuss XML project files. The XQuery *should* be reaching into `collection('/db/seuss/tsg-xml/')`, not `collection('/db/luh429/')` at the very least to share this data with the project team, which should have been reviewing it for accuracy. 
  
  It's hard to do "sanity checking" of your data when you're the one writing the XQuery, and it really takes cooordinated teamwork to do this well. Next time, we hope you'll improve at this, simply knowing what kinds of things can go wrong. 
 
