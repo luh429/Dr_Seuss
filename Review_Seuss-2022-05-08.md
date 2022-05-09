@@ -70,7 +70,7 @@ The `$chars` variable basically combines the two different ways of grabbing char
 
  I am sorry to find that the data collection and visualization in this project to have missed a serious portion of the team's markup. I am also concerned that the only XQuery file saved in the eXist-dB that seems to generate the character count data is pointed at Logan's personal directory, which does not at this time contain *any* Seuss XML project files. The XQuery *should* be reaching into `collection('/db/seuss/tsg-xml/')`, not `collection('/db/luh429/')` at the very least to share this data with the project team, which should have been reviewing it for accuracy. 
  
- It's hard to do "sanity checking" of your data when you're the one writing the XQuery, and it really takes cooordinated teamwork to do this well. Next time, we hope you'll improve at this, simply knowing what kinds of things can go wrong. 
+ It's hard to do "sanity checking" of your data when you're the one writing the XQuery, and it really takes coordinated teamwork to do this well. Next time, we hope you'll improve at this, simply knowing what kinds of things can go wrong. 
 
 #### Made-up Words and Line-counts
 This part of your project appears to be more reliable than the character data, since the schema rules are less complicated. It might have helped to inform the readers that 20 out of 21 of your books are written as poems with lines, while just one book seems to have prose paragraphs(?) 
